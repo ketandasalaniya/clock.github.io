@@ -1,19 +1,21 @@
-#clockContainer{
+#clockContainer {
     position: relative;
     margin: auto;
     /* top: 50px; */
     height: 40vw;
     width: 40vw;
-    background: url(clockface.png) no-repeat;
+    background: url(/clockface.png) no-repeat;
     background-size: 100%;
 }
 
-#hour, #minute, #second{
+#hour,
+#minute,
+#second {
     position: absolute;
     background: black;
 }
 
-#hour{
+#hour {
     width: 2%;
     height: 25%;
     top: 25.4%;
@@ -21,7 +23,7 @@
     transform-origin: bottom;
 }
 
-#minute{
+#minute {
     width: 1.5%;
     height: 30%;
     top: 20%;
@@ -29,7 +31,7 @@
     transform-origin: bottom;
 }
 
-#second{
+#second {
     width: 0.5%;
     height: 37%;
     top: 13%;
@@ -37,7 +39,7 @@
     transform-origin: bottom;
 }
 
-.dgclock{
+.dgclock {
     font-family: 'poppins', sans-serif;
     font-weight: 400;
     display: flex;
@@ -46,7 +48,7 @@
     position: relative;
 }
 
-.btn{
+.btn {
     text-decoration: none;
     margin: 15px 35px;
     padding: 20px 50px;
