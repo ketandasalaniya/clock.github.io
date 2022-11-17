@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
     <link rel="stylesheet" href="dclock.css" class="css">
+    <link rel="stylesheet" href="./header.css" class="css">
 </head>
+
 <body>
+    <section id="header">
+        <a href="../index.html">
+            <h2>Ketan Dasalaniya</h2>
+        </a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="../index.html">Home</a></li>
+                <li><a href="./clock.html">Clock</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
     <div class="dgclock">
-        <a href="index.html" class="btn">Analog Clock</a>
+        <a href="./clock.html" class="btn">Analog Clock</a>
     </div>
     <div class="container">
         <span id="hours">00</span>
@@ -20,28 +37,29 @@
         <span id="session">AM</span>
     </div>
     <script>
-        function displayTime(){
-            var dateTime =new Date();
+        function displayTime() {
+            var dateTime = new Date();
             var hrs = dateTime.getHours();
             var min = dateTime.getMinutes();
             var sec = dateTime.getSeconds();
             var session = document.getElementById('session');
 
-            if(hrs >= 12){
+            if (hrs >= 12) {
                 session.innerHTML = 'PM';
-            }else{
+            } else {
                 session.innerHTML = 'AM';
-                }
-            if(hrs > 12){
+            }
+            if (hrs > 12) {
                 hrs = hrs - 12;
             }
             document.getElementById('hours').innerHTML = hrs;
             document.getElementById('minutes').innerHTML = min;
             document.getElementById('seconds').innerHTML = sec;
-            
+
 
         }
         setInterval(displayTime, 1000);
     </script>
 </body>
+
 </html>
