@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+}
+
+.dgclock{
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.btn{
+    text-decoration: none;
+    margin: 15px 35px;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
