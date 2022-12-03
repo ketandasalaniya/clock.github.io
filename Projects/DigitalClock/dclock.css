@@ -15,7 +15,7 @@ body {
     font-size: 100px;
 }
 
-.dgclock{
+.dgclock {
     font-family: 'poppins', sans-serif;
     font-weight: 400;
     display: flex;
@@ -24,7 +24,7 @@ body {
     position: relative;
 }
 
-.btn{
+.btn {
     text-decoration: none;
     margin: 15px 35px;
     padding: 20px 50px;
