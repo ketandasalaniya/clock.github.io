@@ -88,6 +88,26 @@ body {
     }
 }
 
+@media only screen and (max-width: 1080px) {
+    .nav-section {
+        width: 25%;
+    }
+
+    .left-nav-style {
+        padding: 40px 30px 20px;
+    }
+
+    .profile-image {
+        height: 125px;
+        width: 125px;
+    }
+
+    .profile-image img {
+        height: 125px;
+        width: 125px;
+    }
+}
+
 /* ========== SIDEBAR MENU ========== */
 
 .nav-section .menu-text ul {
@@ -128,6 +148,25 @@ body {
 }
 
 @media only screen and (max-width: 1366px) {
+    .nav-section .menu-text ul {
+        margin: 8px 32px;
+    }
+
+    .nav-section .menu-text ul li {
+        padding: 10px 0px;
+        margin: 8px 0px;
+    }
+
+    .nav-section .menu-text ul li a span {
+        font-size: 15px;
+    }
+
+    .nav-section .menu-text ul li i {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
     .nav-section .menu-text ul {
         margin: 8px 32px;
     }
@@ -218,6 +257,23 @@ body {
     }
 }
 
+@media only screen and (max-width: 1080px) {
+    .nav-section .social {
+        font-size: 20px;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .nav-section .social a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-section .top-button {
+        margin: 25px auto;
+    }
+}
+
 /* =============== HOME PAGE =============== */
 
 #home {
@@ -282,7 +338,7 @@ body {
 
 @keyframes animate {
 
-    40%,
+
     60% {
         left: calc(100% + 10px);
     }
@@ -313,6 +369,34 @@ body {
 
 }
 
+@media only screen and (max-width: 1080px) {
+    #home {
+        width: 80%;
+    }
+
+    #home .heading h1 {
+        font-size: 50px;
+        position: absolute;
+        top: 200px;
+    }
+
+    #home .heading .wrapper {
+        position: absolute;
+        top: 300px;
+        left: 425px;
+    }
+
+    #home .heading .wrapper .static-txt {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    #home .heading .wrapper .dynamic-txt {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+}
 
 /* =============== FEATURES SECTION =============== */
 
