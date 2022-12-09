@@ -33,6 +33,7 @@ body {
 /* =============== NAVIGATION SIDEBAR =============== */
 
 /* ========== PROFILE IMAGE ==========  */
+
 .nav-section {
     height: 100vh;
     min-height: 100vh;
@@ -182,6 +183,7 @@ body {
 }
 
 /* ========== SOCIAL ICONS ========== */
+
 .nav-section .social {
     min-width: 100%;
     color: #fff;
