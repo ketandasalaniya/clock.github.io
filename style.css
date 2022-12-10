@@ -322,6 +322,7 @@ body {
     font-weight: 500;
     position: relative;
     padding-left: 15px;
+
 }
 
 .text.dynamic-txt:before {
@@ -371,11 +372,11 @@ body {
 
 @media only screen and (max-width: 1080px) {
     #home {
-        width: 80%;
+        width: 75%;
     }
 
     #home .heading h1 {
-        font-size: 50px;
+        font-size: 30px;
         position: absolute;
         top: 200px;
     }
@@ -383,12 +384,10 @@ body {
     #home .heading .wrapper {
         position: absolute;
         top: 300px;
-        left: 425px;
     }
 
     #home .heading .wrapper .static-txt {
-        font-size: 10px;
-        font-weight: 600;
+        display: none;
     }
 
     #home .heading .wrapper .dynamic-txt {
@@ -406,7 +405,7 @@ body {
     height: 100vh;
     display: block;
     float: right;
-    padding: 90px 0px 70px 0px;
+    padding: 40px 0px 70px 0px;
 }
 
 #features .feature-block {
@@ -441,7 +440,7 @@ body {
     height: 100vh;
     display: block;
     float: right;
-    padding: 90px 0px 70px 0px;
+    padding: 40px 0px 70px 0px;
 }
 
 #portfolio .feature-block {
@@ -476,7 +475,7 @@ body {
     height: 100vh;
     display: block;
     float: right;
-    padding: 90px 0px 70px 0px;
+    padding: 40px 0px 70px 0px;
 }
 
 #resume .feature-block {
@@ -511,7 +510,7 @@ body {
     height: 100vh;
     display: block;
     float: right;
-    padding: 90px 0px 70px 0px;
+    padding: 40px 0px 70px 0px;
 }
 
 #blog .feature-block {
@@ -546,7 +545,7 @@ body {
     height: 100vh;
     display: block;
     float: right;
-    padding: 90px 0px 70px 0px;
+    padding: 40px 0px 70px 0px;
 }
 
 #contact .feature-block {
@@ -581,7 +580,7 @@ body {
     height: 100vh;
     display: block;
     float: right;
-    padding: 90px 0px 70px 0px;
+    padding: 40px 0px 70px 0px;
 }
 
 #footer .feature-block {
