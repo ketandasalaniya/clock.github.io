@@ -9,12 +9,16 @@
 :root {
     --font-primary: "Poppins", sans-serif;
     --font-secondary: "Montserrat", sans-serif;
-    --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-    --shadow-2: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    --shadow-3: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
     --font-color-primary: #C4CFDE;
     --font-color-secondary: #5e91ce;
     --font-color-lighten: #c4cfde;
+
+    --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    --shadow-2: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    --shadow-3: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+    --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
     --body-bg: #212428;
 }
 
@@ -30,7 +34,7 @@ body {
     background-color: var(--body-bg);
 }
 
-/* =============== NAVIGATION SIDEBAR =============== */
+/* ============================== NAVIGATION SIDEBAR ============================== */
 
 /* ========== PROFILE IMAGE ==========  */
 
@@ -43,6 +47,10 @@ body {
     box-shadow: var(--shadow-3);
     display: block;
     float: left;
+}
+
+.nav-section .menu-icon {
+    display: none;
 }
 
 .left-nav-style {
@@ -73,6 +81,10 @@ body {
         width: 20%;
     }
 
+    .nav-section .menu-icon {
+        display: none;
+    }
+
     .left-nav-style {
         padding: 40px 30px 20px;
     }
@@ -92,6 +104,19 @@ body {
     .nav-section {
         width: 25%;
     }
+
+    .nav-section .menu-icon {
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 18px;
+        margin-top: 10px;
+    }
+
+    .nav-section .menu-icon i {
+        font-size: 35px;
+    }
+
 
     .left-nav-style {
         padding: 40px 30px 20px;
@@ -185,7 +210,7 @@ body {
     }
 }
 
-/* ========== SOCIAL ICONS ========== */
+/* ========== SOCIAL MEDIA ICONS ========== */
 
 .nav-section .social {
     min-width: 100%;
@@ -274,7 +299,7 @@ body {
     }
 }
 
-/* =============== HOME PAGE =============== */
+/* ============================== HOME PAGE ============================== */
 
 #home {
     width: 83%;
@@ -397,12 +422,12 @@ body {
 
 }
 
-/* =============== FEATURES SECTION =============== */
+/* ============================== FEATURES SECTION ============================== */
 
 
 #features {
     width: 83%;
-    height: 100vh;
+    /* height: 100vh; */
     display: block;
     float: right;
     padding: 40px 0px 70px 0px;
@@ -431,8 +456,94 @@ body {
     margin-bottom: 0;
 }
 
-/* =============== PORTFOLIO SECTION =============== */
+/* ==========CARDS STARTS HERE ==========*/
 
+#features .feature-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 130px 0px 130px;
+}
+
+#features .feature-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 125px;
+    width: 180px;
+    height: 350px;
+}
+
+#features .feature-card .front i {
+    display: block;
+    text-align: center;
+    color: var(--font-color);
+    font-size: 100px;
+}
+
+#features .feature-card img {
+    width: 250px;
+    height: 62px;
+}
+
+#features .feature-card h3 {
+    display: block;
+    text-align: center;
+    color: #C4CFDE;
+    font-size: 30px;
+    font-family: var(--font-color-secondary);
+}
+
+#features .feature-card ul {
+    font-family: var(--font-secondary);
+    font-size: 20px;
+    color: #C4CFDE;
+}
+
+.feature-card>.front {
+    position: absolute;
+    transform: perspective(1000px) rotateY(0deg);
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    border: 2px solid rgb(97, 162, 223);
+    border-radius: 15px;
+    width: 22%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-card>.back {
+    position: absolute;
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .5s linear 0s;
+    backface-visibility: hidden;
+    border: 2px solid rgb(97, 162, 223);
+    border-radius: 15px;
+    width: 22%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-card:hover>.front {
+    transform: perspective(1000px) rotateY(-180deg);
+}
+
+.feature-card:hover>.back {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+
+/* ============================== PORTFOLIO SECTION ============================== */
 
 
 #portfolio {
@@ -466,7 +577,7 @@ body {
     margin-bottom: 0;
 }
 
-/* =============== RESUME SECTION =============== */
+/* ============================== RESUME SECTION ============================== */
 
 
 
@@ -501,7 +612,7 @@ body {
     margin-bottom: 0;
 }
 
-/* =============== BLOG SECTION =============== */
+/* ============================== BLOG SECTION ============================== */
 
 
 
@@ -536,7 +647,7 @@ body {
     margin-bottom: 0;
 }
 
-/* =============== CONTACT SECTION =============== */
+/* ============================== CONTACT SECTION ============================== */
 
 
 
@@ -571,7 +682,7 @@ body {
     margin-bottom: 0;
 }
 
-/* =============== FOOTER SECTION =============== */
+/* ============================== FOOTER SECTION ============================== */
 
 
 

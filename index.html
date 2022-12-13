@@ -8,11 +8,15 @@
     <title>Portfolio | Ketan Dasalaniya</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/f02d0fed0f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Sidebar Section -->
     <section class="nav-section">
+        <div class="menu-icon">
+            <i class="bi bi-list"></i>
+        </div>
         <div class="left-nav-style">
             <div class="profile-image">
                 <img src="profile.png" alt="profile-image">
@@ -87,6 +91,106 @@
             <span>FEATURES</span>
             <h2>What I Know</h2>
         </div>
+
+        <div class="feature-cards">
+
+            <div class="feature-card">
+
+                <div class="front">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React JS</h3>
+                </div>
+
+                <div class="back">
+                    <ul>
+                        <li>Render HTML</li>
+                        <li>JSX</li>
+                        <li>Components</li>
+                        <li>Class</li>
+                        <li>Props</li>
+                        <li>Events</li>
+                        <li>States</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="front">
+                    <i class="fa-brands fa-square-js"></i>
+                    <h3>Javascript</h3>
+                </div>
+
+                <div class="back">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="front">
+                    <img src="./images/Asset 2.png" alt="jquery_image">
+                    <h3>jQuery</h3>
+                </div>
+
+                <div class="back">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="front">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                </div>
+
+                <div class="back">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="front">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="back">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="front">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="back">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
     </section>
 
     <!-- Portfolio Section -->
@@ -130,7 +234,7 @@
     </section>
 </body>
 
-<script>
+<script type="text/javascript">
     const text = document.querySelector(".dynamic-txt");
 
     const textLoad = () => {
@@ -143,6 +247,14 @@
     }
     textLoad();
     setInterval(textLoad, 12000);
+
+    // function onClickMenu() {
+    //     document.getElementByClass("nav-section").style.display = "none";
+    // }
+
+    // document.getElementsByClassName("menu-icon").onclick = function () {
+    //     document.getElementById("nav-section").style.display = "none";
+    // }
 </script>
 
 </html>
