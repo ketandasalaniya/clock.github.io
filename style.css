@@ -378,11 +378,6 @@ body {
         position: absolute;
         top: 300px;
     }
-
-    #home .heading .wrapper .static-txt {
-        display: none;
-    }
-
 }
 
 /* ============================== FEATURES SECTION ============================== */
