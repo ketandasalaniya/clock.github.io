@@ -26,9 +26,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-} */
+}
 
 body {
     background-color: var(--body-bg);
@@ -317,7 +317,8 @@ body {
 }
 
 #home .heading h1 {
-    color: #fff;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #5e91ce;
     font-family: var(--font-secondary);
     font-size: 90px;
     line-height: 1.29;
@@ -339,7 +340,14 @@ body {
     font-weight: 400;
 }
 
-.dynamic-txt {
+.wrapper .auto-input {
+    color: rgb(110, 214, 192);
+    font-family: var(--font-primary);
+    font-size: 35px;
+    font-weight: 400;
+}
+
+/* .dynamic-txt {
     content: "";
     color: #5e91ce;
     font-family: var(--font-primary);
@@ -360,9 +368,9 @@ body {
     background-color: var(--body-bg);
     border-left: 2px solid;
     animation: animate 4s steps(15) infinite;
-}
+} */
 
-@keyframes animate {
+/* @keyframes animate {
 
 
     60% {
@@ -372,7 +380,7 @@ body {
     100% {
         left: 0%;
     }
-}
+} */
 
 @media only screen and (max-width: 1366px) {
     #home {
@@ -464,7 +472,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 50px 130px 0px 130px;
+    margin: 30px 130px 0px 130px;
 }
 
 #features .feature-card {
@@ -473,8 +481,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 10px 125px;
-    width: 180px;
+    margin: 10px 0px;
+    width: 400px;
     height: 350px;
 }
 
@@ -493,7 +501,7 @@ body {
 #features .feature-card h3 {
     display: block;
     text-align: center;
-    color: #C4CFDE;
+    color: rgb(184, 179, 179);
     font-size: 30px;
     font-family: var(--font-color-secondary);
 }
@@ -501,7 +509,7 @@ body {
 #features .feature-card ul {
     font-family: var(--font-secondary);
     font-size: 20px;
-    color: #C4CFDE;
+    color: rgb(184, 179, 179);
 }
 
 .feature-card>.front {
@@ -509,14 +517,15 @@ body {
     transform: perspective(1000px) rotateY(0deg);
     backface-visibility: hidden;
     transition: transform .5s linear 0s;
-    border: 2px solid rgb(97, 162, 223);
+    /* border: 2px solid rgb(97, 162, 223); */
     border-radius: 15px;
-    width: 22%;
+    width: 400px;
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(145deg, #1e2024, #23272b);
 }
 
 .feature-card>.back {
@@ -524,14 +533,15 @@ body {
     transform: perspective(1000px) rotateY(180deg);
     transition: transform .5s linear 0s;
     backface-visibility: hidden;
-    border: 2px solid rgb(97, 162, 223);
+    /* border: 2px solid rgb(97, 162, 223); */
     border-radius: 15px;
-    width: 22%;
+    width: 400px;
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(145deg, #1e2024, #23272b);
 }
 
 .feature-card:hover>.front {
