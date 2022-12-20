@@ -341,7 +341,7 @@ body {
 }
 
 .wrapper .auto-input {
-    color: rgb(110, 214, 192);
+    color: var(--font-color-secondary);
     font-family: var(--font-primary);
     font-size: 35px;
     font-weight: 400;
@@ -353,12 +353,7 @@ body {
     }
 
     #home .heading h1 {
-        font-size: 50px;
-    }
-
-    .wrapper .static-txt {
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 70px;
     }
 
 }
@@ -369,14 +364,9 @@ body {
     }
 
     #home .heading h1 {
-        font-size: 30px;
+        font-size: 50px;
         position: absolute;
         top: 200px;
-    }
-
-    #home .heading .wrapper {
-        position: absolute;
-        top: 300px;
     }
 }
 
